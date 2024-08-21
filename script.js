@@ -5,7 +5,7 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 
 /* Estilos dinámicos para el menú hamburguesa */
 let currentSlide = 0;
-const slides = ["Texto del slider 1", "Texto del slider 2", "Texto del slider 3"];
+const slides = ["Oferta Laboral Para Bornstudio", "Texto del slider 2", "Texto del slider 3"];
 
 function changeSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
