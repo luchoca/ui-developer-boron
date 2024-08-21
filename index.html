@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba UI Developer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home">Acerca de</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#repository">Repositorio</a></li>
+                <li><a href="#news">Novedades</a></li>
+                <li><a href="#services">Contacto</a></li>
+                <li><a href="#lenguage">EN/ES</a></li>
+                <li><a href="#search">Buscar</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle" aria-label="Toggle navigation">
+            &#9776; <!-- Ícono de hamburguesa -->
+        </button>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to the UI Developer Test</h1>
+            <!-- Aquí añadiremos más contenido -->
+        </section>
+         <!-- Sección de Texto Full Width -->
+    <section id="full-width-text">
+        <p>
+            Este es un ejemplo de texto que ocupa todo el ancho de la pantalla. Se adaptará a diferentes resoluciones, manteniendo su legibilidad y estilo.
+        </p>
+    </section>
+    <section id="image-slider">
+        <div class="image-container">
+            <img src="assets/images/sample-image.jpg" alt="Sample Image">
+        </div>
+        <div class="slider">
+            <p id="slider-text">Texto del slider 1</p>
+            <button onclick="changeSlide()">Siguiente</button>
+        </div>
+    </section>
+    <section id="repository">
+        <ul>
+            <li>
+                <a href="#">Link 1</a>
+                <img src="assets/images/repo-image1.jpg" alt="Repo Image 1">
+            </li>
+            <li>
+                <a href="#">Link 2</a>
+                <img src="assets/images/repo-image2.jpg" alt="Repo Image 2">
+            </li>
+            <!-- Añadir más links según sea necesario -->
+        </ul>
+    </section>
+    <section id="news">
+        <h2>Novedades</h2>
+        <ul>
+            <li>
+                <a href="#">Novedad 1</a>
+                <img src="assets/images/news-image1.jpg" alt="News Image 1">
+            </li>
+            <li>
+                <a href="#">Novedad 2</a>
+                <img src="assets/images/news-image2.jpg" alt="News Image 2">
+            </li>
+            <!-- Más novedades según sea necesario -->
+        </ul>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 UI Developer Test. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* Reset de algunos estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none; /* Lo mostraremos solo en mobile */
+}
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-nav.active ul {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+}
+#full-width-text {
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+#image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slider {
+    max-width: 40%;
+    text-align: center;
+}
+
+#slider-text {
+    margin-bottom: 20px;
+}
+#repository ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#repository ul li {
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#repository ul li img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#repository ul li:hover img {
+    display: block;
+}
+#news {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #eaeaea;
+    margin-top: 20px;
+}
+
+#news h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#news ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news ul li {
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#news ul li img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#news ul li:hover img {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content .social-links a:hover {
+    text-decoration: underline;
+}
