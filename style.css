@@ -1,5 +1,5 @@
 /* Reset de algunos estilos básicos */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,8 +39,7 @@ header {
 }
 
 main {
-    margin-top: 60px;
-    padding: 20px;
+    margin-top: 45px;
 }
 
 footer {
@@ -75,6 +74,12 @@ footer {
         right: 10px;
         top: 15px;
     }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 }
 #full-width-text {
     width: 100%;
@@ -103,6 +108,7 @@ footer {
     text-align: center;
 }
 
+
 #slider-text {
     margin-bottom: 20px;
 }
@@ -116,11 +122,15 @@ footer {
 
 #repository ul li {
     position: relative;
-    margin: 20px 0;
     cursor: pointer;
+    width: 100%;
 }
 
-#repository ul li img {
+#repository li{
+    margin: 0.3%;
+}
+
+/* #repository ul li img { 
     display: none;
     position: absolute;
     top: 100%;
@@ -128,10 +138,14 @@ footer {
     transform: translateX(-50%);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 
-#repository ul li:hover img {
+/* #repository ul li:hover img {
     display: block;
+} */
+a{
+    text-decoration: none;
+    color: #000000;
 }
 #news {
     padding: 20px;
@@ -140,7 +154,7 @@ footer {
     margin-top: 20px;
 }
 
-#news h2 {
+#news, #repository,#home, .titulo-nuestroenfoque h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -205,4 +219,54 @@ footer {
 
 .footer-content .social-links a:hover {
     text-decoration: underline;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.img-marquee{
+width: 30%;
+}
+
+.marquee-1 {
+    animation-name: marquee-left;
+}
+
+.marquee-2 {
+    animation-name: marquee-right;
+}
+
+.marquee-3 {
+    animation-name: marquee-left;
+}
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }

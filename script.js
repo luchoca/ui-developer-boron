@@ -11,3 +11,10 @@ function changeSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     document.getElementById('slider-text').innerText = slides[currentSlide];
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const marquees = document.querySelectorAll('.marquee');
+
+    marquees.forEach((marquee, index) => {
+        marquee.style.animationDuration = `${10 + index * 2}s`; // Modifica la duración de la animación para cada marquesina
+    });
+});

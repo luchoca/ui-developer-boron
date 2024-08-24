@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba UI Developer</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <header>
         <nav id="main-nav">
@@ -25,53 +27,85 @@
     </header>
 
     <main>
-        <!-- <section id="home">
-            <h1>Welcome to the UI Developer Test</h1>
-
-        </section> -->
-         <!-- Sección de Texto Full Width -->
-    <section id="full-width-text">
-        <p>
-            Somos una organizacion autonóma que busca resolver desafíos relacionados con el aprendizaje 
-            y la mediación de las tecnologias, a través de metodologías innovadoras y un abordaje práctico, social y participativo.
-        </p>
-    </section>
-    <section id="image-slider">
-        <div class="image-container">
-            <img src="assets/images/fotofigma.png" alt="Sample Image">
-        </div>
-        <div class="slider">
-            <p id="slider-text">Texto del slider 1</p>
-            <button onclick="changeSlide()">Siguiente</button>
-        </div>
-    </section>
-    <section id="repository">
-        <ul>
-            <li>
-                <a href="#">Link 1</a>
-                <img src="assets/images/repo-image1.jpg" alt="Repo Image 1">
-            </li>
-            <li>
-                <a href="#">Link 2</a>
-                <img src="assets/images/repo-image2.jpg" alt="Repo Image 2">
-            </li>
-            <!-- Añadir más links según sea necesario -->
-        </ul>
-    </section>
-    <section id="news">
-        <h2>Novedades</h2>
-        <ul>
-            <li>
-                <a href="#">Novedad 1</a>
-                <img src="assets/images/news-image1.jpg" alt="News Image 1">
-            </li>
-            <li>
-                <a href="#">Novedad 2</a>
-                <img src="assets/images/news-image2.jpg" alt="News Image 2">
-            </li>
-            <!-- Más novedades según sea necesario -->
-        </ul>
-    </section>
+        <section id="home">
+            <h1>Bienvenidos</h1>
+            Desarrollamos y promovemos investigación, innovación y
+            divulgación sobre tecnología digital y aprendizaje, en Uruguay y América Latina
+        </section>
+        <section>
+            <div class="marquee-container">
+                <div class="marquee marquee-1">Texto para la primera marquesina <img class="img-marquee" src="assets/images/fotofigma.png" alt="Sample Image"></div>
+                <div class="marquee marquee-2">Texto para la segunda marquesina</div>
+                <div class="marquee marquee-3">Texto para la tercera marquesina</div>
+            </div>
+        </section>
+        <!-- Sección de Texto Full Width -->
+        <section id="full-width-text">
+            <p>
+                Somos una organizacion autonóma que busca resolver desafíos relacionados con el aprendizaje
+                y la mediación de las tecnologias, a través de metodologías innovadoras y un abordaje práctico, social y
+                participativo.
+            </p>
+        </section>
+        <section id="image-slider">
+            <div class="slider">
+                <h3 class="titulo-nuestroenfoque">Nuestro Enfoque</h3>
+                <p id="slider-text">Está orientada a problematizar y aportar ideas
+                    y soluciones a la implementacion actual y futura de Boron Studio y de otros actores nacionales
+                    e internacionales.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="assets/images/fotofigma.png" alt="Sample Image">
+            </div>
+      
+        </section>
+        <section id="image-slider">
+            <div class="image-container">
+                <img src="assets/images/fotofigma.png" alt="Sample Image">
+            </div>
+            <div class="slider">
+                <p id="slider-text">Texto del slider 1</p>
+                <button onclick="changeSlide()">Siguiente</button>
+            </div>
+        </section>
+        <section id="repository">
+            <h2>Repositorio</h2>
+            <ul>
+                
+                <li>
+                    <hr>
+                    <a href="#">Autor</a>
+                </li>
+                <li>
+                    <hr>
+                    <a href="#">Titulo</a>
+                </li>
+                <li>
+                    <hr>
+                    <a href="#">Lineas de Navegacion</a>
+                </li>
+                <li>
+                    <hr>
+                    <a href="#">Descripciones</a>
+                    <hr>
+                </li>
+            </ul>
+        </section>
+        <section id="news">
+            <h2>Novedades</h2>
+            <ul>
+                <li>
+                    <a href="#">Novedad 1</a>
+                    <img src="assets/images/news-image1.jpg" alt="News Image 1">
+                </li>
+                <li>
+                    <a href="#">Novedad 2</a>
+                    <img src="assets/images/news-image2.jpg" alt="News Image 2">
+                </li>
+                <!-- Más novedades según sea necesario -->
+            </ul>
+        </section>
     </main>
 
     <footer>
@@ -87,4 +121,5 @@
 
     <script src="/script.js"></script>
 </body>
+
 </html>
