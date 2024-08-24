@@ -5,7 +5,7 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 
 /* Estilos dinámicos para el menú hamburguesa */
 let currentSlide = 0;
-const slides = ["Oferta Laboral Para Bornstudio", "Texto del slider 2", "Texto del slider 3"];
+const slides = ["OportunidadLaboral Llamado abierto para sumarse al equipo de @Boronstudio master digital.👩‍💻👨‍💻Más información 👉https://bit.ly/2OobIHS", "Texto del slider 2", "Texto del slider 3"];
 
 function changeSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
