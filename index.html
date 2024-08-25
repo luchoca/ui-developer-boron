@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba UI Developer</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
 
 <body>
@@ -17,8 +21,9 @@
                 <li><a href="#repository">Repositorio</a></li>
                 <li><a href="#news">Novedades</a></li>
                 <li><a href="#services">Contacto</a></li>
-                <li><a href="#lenguage">EN/ES</a></li>
-                <li><a href="#search">Buscar</a></li>
+                <li><a href="#lenguage">EN/ <b>ES</b></a></li>
+                <li><a href="#search"><i class="fas fa-search"></i>
+                    </a></li>
             </ul>
         </nav>
         <button id="menu-toggle" aria-label="Toggle navigation">
@@ -29,7 +34,7 @@
     <main>
         <section id="home">
             <h1 class="home-title">Bienvenidos</h1>
-            <p>Desarrollamos y promovemos investigación, innovación y
+            <p>Desarrollamos y <span class="subrayado">promovemos investigación</span>, innovación y
                 divulgación sobre <u>tecnología digital</u> y aprendizaje, en <u>Uruguay y América Latina</u>
         </section>
         </p>
@@ -89,7 +94,13 @@
                             href="https://bit.ly/2OobIHS">https://bit.ly/2OobIHS</a>"</p>
 
                 </div>
-                <button onclick="changeSlide()">Siguiente</button>
+                <div class="slider-buttons"> <button onclick="changeSlide()"><i id="arrowButton"
+                            class="fas fa-arrow-left"></i>
+                    </button>
+                    <button onclick="changeSlide()">
+                        <i class="fas fa-arrow-right"></i></button>
+                </div>
+
             </div>
         </section>
         <section id="repository">
@@ -126,7 +137,7 @@
                     <H3>WEBINAR +</H3>
                     <a href="#">Boron Studio invita a webinar sobre educación híbrida</a>
                 </div>
-                <div  class="newswithimg">
+                <div class="newswithimg">
                     <img class="img-news" src="assets/images/reunion-img.png" alt="">
                     <a href="#">Boron Studio invita a webinar sobre educación híbrida</a>
                 </div>

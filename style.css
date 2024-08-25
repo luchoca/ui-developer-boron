@@ -5,10 +5,12 @@
     box-sizing: border-box;
     color: #000000;
 }
-section{
+
+section {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
@@ -17,10 +19,14 @@ body {
     padding: 0;
 }
 
+.subrayado {
+    background-color: #77D7DB;
+    padding-bottom: 2px;
+}
+
 header {
     background: #ffffff;
     color: #fff;
-    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,21 +37,23 @@ header {
 #main-nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     color: #000000;
 }
 
 #main-nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    padding: 10px;
     color: #000000;
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 60px;
 }
 
 #menu-toggle {
     display: none;
+    color: black;
+    background-color: #000000;
     /* Lo mostraremos solo en mobile */
 }
 
@@ -61,6 +69,12 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+#news .title-nov {
+    font-size: 132px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilos para pantallas pequeñas */
@@ -88,6 +102,50 @@ footer {
     }
 
 
+}
+
+@media (max-width: 1160px) {
+    #home .home-title {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 1126px) {
+    #home .home-title {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 860px) {
+    #home .home-title {
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 746px) {
+    #home .home-title {
+        font-size: 100px;
+    }
+
+    #news .title-nov {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 730px) {
+    #home .home-title {
+        font-size: 80px;
+    }
+
+    #news .title-nov {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 690px) {
+    #newa .title-nov {
+        font-size: 20px;
+    }
 }
 
 #full-width-text {
@@ -129,6 +187,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 .image-container2 img {
     width: 100%;
     height: 100%;
@@ -152,7 +211,7 @@ footer {
     margin-bottom: 20px;
 }
 
-#slider-text2{
+#slider-text2 {
     font-size: 24px;
 }
 
@@ -161,7 +220,24 @@ footer {
     margin-bottom: 50%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+button{
+    background-color: #1DA1F2;
+    border-radius: 0;
+    margin-right: 5%;
+    width: 5%;
+    padding-block: 0px;
+    padding-inline: 0px;
+    border-width: 0px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
 
+.slider-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #repository ul {
     list-style: none;
     padding: 0;
@@ -171,23 +247,26 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
 }
-#repository a{
+
+#repository a {
     font-size: 42px;
 }
 
-#repository .repo-title{
+#repository .repo-title {
     font-size: 72px;
     margin-left: 5%;
 }
-.repo-parraph{
+
+.repo-parraph {
     margin-right: 5%;
 }
-.repo-title-div{
+
+.repo-title-div {
     display: flex;
     justify-content: space-between;
 }
 
-.repo-parraph{
+.repo-parraph {
     align-content: center;
 }
 
@@ -201,19 +280,6 @@ footer {
     margin: 0.3%;
 }
 
-/* #repository ul li img { 
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-/* #repository ul li:hover img {
-    display: block;
-} */
 a {
     text-decoration: none;
     color: #000000;
@@ -230,7 +296,7 @@ a {
     margin-bottom: 20px;
 }
 
-#home h1 {
+.home-title {
     font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 205px;
@@ -242,7 +308,8 @@ a {
     font-size: 64px;
 }
 
-#home{
+#home {
+    width: 100%;
     background-color: white;
 }
 
@@ -254,66 +321,36 @@ a {
     justify-content: space-between;
 }
 
-
-
-/* #news div{
-    position: relative;
-    margin: 20px 0;
-    cursor: pointer;
-}
-
-#news div img {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-
-} */
-
-/* #news ul li:hover img {
-    display: block;
-    opacity: 0;
-    animation: fadeIn 0.3s forwards;
-} */
-
-#news .title-nov {
-    font-size: 132px;
-    margin: 0;
-    padding: 0;
-}
-.webinar{
+.webinar {
     background-color: #40B5E0;
     font-size: 24px;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: space-between;
 }
-.newswithimg{
+
+.newswithimg {
     background-color: #77D7DB;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: space-between;
     width: 30%;
     font-size: 24px;
 }
 
-.event{
+.event {
     background-color: #44D19D;
     font-size: 24px;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.publi{
+.publi {
     background-color: #FEDA3C;
     font-size: 24px;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: space-between;
 
 }
@@ -333,7 +370,7 @@ a {
 .footer-content {
     text-align: center;
     padding: 20px;
-    background-color:#333;
+    background-color: #333;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -370,12 +407,15 @@ a {
 }
 
 .img-marquee {
-    width: 30%;
+    width: 20%;
+    height: 20%;
 }
 
 .marque-title {
     font-size: 132px;
     font-weight: 700;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .marquee-1 {
