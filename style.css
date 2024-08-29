@@ -1,16 +1,13 @@
-/* Reset de algunos estilos básicos */
 * {
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #000;
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
 }
 
 .subrayado {
@@ -19,32 +16,28 @@ body {
 }
 
 header {
-    background: #ffffff;
-    color: #fff;
+    background: #fff;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
 }
 
-.algo {
+.nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 #main-nav ul {
     list-style: none;
     display: flex;
-    color: #000000;
     align-items: center;
+    color: #000;
 }
 
 #main-nav ul li a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
-    color: #000000;
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 60px;
@@ -52,34 +45,22 @@ header {
 
 #menu-toggle {
     display: none;
-    color: black;
-    background-color: #000000;
-    /* Lo mostraremos solo en mobile */
+    background-color: #000;
+    color: #fff;
 }
 
 main {
     margin-top: 45px;
 }
 
-footer {
-    text-align: center;
-    margin: 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 #news .title-nov {
-    font-size: 132px;
-    margin: 0;
-    padding: 0;
+    font-size: 10vw;
 }
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 1139px) {
     #main-nav ul {
+        margin-top: 6%;
+        margin-right: 6%;
         display: none;
         flex-direction: column;
         text-align: center;
@@ -91,60 +72,12 @@ footer {
 
     #menu-toggle {
         display: block;
-        background-color: #000000;
-        color: #fff;
         border: none;
         font-size: 30px;
         cursor: pointer;
         position: absolute;
         right: 10px;
         top: 15px;
-    }
-
-
-}
-
-@media (max-width: 1160px) {
-    #home .home-title {
-        font-size: 180px;
-    }
-}
-
-@media (max-width: 1126px) {
-    #home .home-title {
-        font-size: 150px;
-    }
-}
-
-@media (max-width: 860px) {
-    #home .home-title {
-        font-size: 130px;
-    }
-}
-
-@media (max-width: 746px) {
-    #home .home-title {
-        font-size: 100px;
-    }
-
-    #news .title-nov {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 730px) {
-    #home .home-title {
-        font-size: 80px;
-    }
-
-    #news .title-nov {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 690px) {
-    #newa .title-nov {
-        font-size: 20px;
     }
 }
 
@@ -153,75 +86,52 @@ footer {
     background-color: #FF5E43;
     text-align: center;
     font-size: 2.2em;
-    color: #000000;
 }
 
 .full-width-parraph {
     font-size: 64px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 }
 
-#image-slider {
+#image-slider, #image-slider2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#image-slider {
     background-color: #1DA1F2;
 }
 
 #image-slider2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #77D7DB;
-    margin: 0;
-    padding: 0;
 }
 
-.image-container2 {
+.image-container, .image-container2 {
     flex: 1;
-    /* Ocupa la mitad derecha del contenedor */
     display: flex;
     justify-content: center;
-    /* Centra la imagen horizontalmente */
     align-items: center;
-    /* Centra la imagen verticalmente */
+    flex-wrap: wrap;
 }
 
-.image-container2 img {
-    max-width: 100%;
-    /* Ajusta la imagen para que se ajuste al contenedor sin desbordar */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-}
-
-.image-container img {
+.image-container img, .image-container2 img {
     width: 100%;
     height: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0;
-    padding: 0;
+    object-fit: cover;
 }
 
-.image-container2 img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.slider {
+.slider, .slider2 {
     max-width: 40%;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .slider2 {
-    max-width: 40%;
-    text-align: center;
     width: 100%;
     height: 100%;
 }
-
 
 #slider-text {
     margin-bottom: 1%;
@@ -234,25 +144,18 @@ footer {
 .titulo-nuestroenfoque {
     font-size: 16px;
     margin-bottom: 50%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 button {
     background-color: #1DA1F2;
-    border-radius: 0;
     margin-right: 5%;
     width: 5%;
-    padding-block: 0px;
-    padding-inline: 0px;
-    border-width: 0px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
+    padding: 0;
+    border: none;
 }
 
 .slider-buttons {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -262,8 +165,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5%;
 }
 
 #repository a {
@@ -277,62 +179,46 @@ button {
 
 .repo-parraph {
     margin-right: 5%;
+    align-content: center;
 }
 
 .repo-title-div {
     display: flex;
     justify-content: space-between;
-}
-
-.repo-parraph {
-    align-content: center;
+    flex-wrap: wrap;
 }
 
 #repository ul li {
     position: relative;
     cursor: pointer;
     width: 100%;
-}
-
-#repository li {
     margin: 0.3%;
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
-#news {
-    background-color: #fff;
-    max-width: 100%;
-}
-
-#news,
-#home,
-.titulo-nuestroenfoque h2 {
+#news, #home, .titulo-nuestroenfoque h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .home-title {
-    font-weight: 700;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 205px;
+    margin-top: 80px;
+    font-size: 10vw;
 }
 
 #home p {
     font-weight: 700;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 64px;
 }
 
 #home {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
 }
-
-
 
 @keyframes fadeIn {
     from {
@@ -347,13 +233,12 @@ a {
 }
 
 .footer-content {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
 }
 
 .footer-content .social-links a {
     color: #fff;
-    text-decoration: none;
 }
 
 .footer-content .social-links a:hover {
@@ -361,20 +246,12 @@ a {
 }
 
 .footer-nav ul li a {
-    color: #ffffff;
-
+    color: #fff;
 }
 
-.footerdelfooter span {
-    color:
-        #FFFFFF;
-
-}
-
-div.footerdelfooter {
+.footerdelfooter {
     max-width: 100%;
     align-content: space-between;
-
 }
 
 .span1 {
@@ -389,46 +266,58 @@ div.footerdelfooter {
     width: 400px;
     height: 60px;
     font-size: 14px;
-    background-color:
-        #77D7DB;
+    background-color: #77D7DB;
+    cursor: pointer;
 }
 
 .titulo-footer {
     font-size: 32px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer-nav {
     align-items: flex-end;
-    justify-content: left;
-
 }
 
 footer {
-    background-color: #000000;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 660px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .col2 {
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    color: #fff;
 }
 
 .marquee-container {
     width: 100%;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 10px 0;
 }
 
 .marquee {
     display: flex;
     white-space: nowrap;
-    color: #fff;
     font-size: 20px;
     padding: 10px;
     animation-duration: 10s;
@@ -444,8 +333,7 @@ footer {
 .marque-title {
     font-size: 132px;
     font-weight: 700;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 3%;
 }
 
 .marquee-1 {
@@ -460,12 +348,10 @@ footer {
     animation-name: marquee-left;
 }
 
-
 @keyframes marquee-left {
     0% {
         transform: translateX(100%);
     }
-
     100% {
         transform: translateX(-100%);
     }
@@ -475,18 +361,10 @@ footer {
     0% {
         transform: translateX(-100%);
     }
-
     100% {
         transform: translateX(100%);
     }
 }
-
-
-/* #newsdiv {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-} */
 
 #newsdiv > div {
     position: relative;
@@ -508,10 +386,9 @@ footer {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    opacity: 2; /* Ajusta la opacidad si es necesario */
+    opacity: 2;
 }
 
-/* Aplicando las imágenes correspondientes a cada div */
 #newsdiv .webinar:hover::before {
     background-image: url('assets/images/cafe-img.jfif');
 }
@@ -529,7 +406,6 @@ footer {
 }
 
 #newsdiv > div > h3 {
-    margin: 0;
     font-size: 1.2rem;
     color: #302f2f;
     position: relative;
@@ -537,8 +413,7 @@ footer {
 }
 
 #newsdiv > div > a {
-    color: #000000;
-    text-decoration: none;
+    color: #000;
     display: block;
     position: relative;
     z-index: 2;
@@ -546,72 +421,38 @@ footer {
 
 @media (min-width: 768px) {
     #newsdiv > div {
-        width: calc(25% - 20px); /* Ajusta para mostrar 4 columnas */
+        width: calc(25% - 20px);
     }
 }
+
 #newsdiv {
     list-style: none;
-    padding: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 0;
+    flex-wrap: wrap;
+}
+
+.webinar, .newswithimg, .event, .publi {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .webinar {
     background-color: #40B5E0;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .newswithimg {
     background-color: #77D7DB;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 30%;
-    font-size: 24px;
 }
 
 .event {
-    background-color: #44D19D;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #FE7864;
 }
 
 .publi {
-    background-color: #FEDA3C;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-
-#newsdiv h3 {
-    transition: opacity 0.3s ease;
-}
-
-#newsdiv a {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all 0.6s ease;
-}
-
-#newsdiv div:hover h3 {
-    opacity: 0; /* Hace desaparecer el h3 */
-}
-
-#newsdiv div:hover a {
-    opacity: 1;
-    margin-top: 110px;
-    padding-top: 10px;
+    background-color: #FF5E43;
 }
